@@ -9,6 +9,7 @@
 <body>
     Test
     <?php
+    echo 'php is working';
     $xml = file_get_contents("https://api.thingspeak.com/channels/2001802/feeds.json?api_key=Y53XE3DGF7LRRSYO&results=2");
 echo $xml;
     ?>
