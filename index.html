@@ -15,10 +15,10 @@
 }).then(function(data) {
   console.log(data);
   
-  
-    console.log("SİLO DOLULUK ORAI: " + data.feeds[data.feeds.length - 1].field1);
+    var oran = data.feeds[data.feeds.length - 1].field1;
+    console.log("SİLO DOLULUK ORAI: " + oran);
 
-    document.body.innerHTML += "12";
+    document.body.innerHTML += "" + oran;
   
 }).catch(function(err) {
   console.log('Fetch Error :-S', err);
