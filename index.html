@@ -14,9 +14,9 @@
   return response.json();
 }).then(function(data) {
   console.log(data);
-  if(Array.isArray(data.feeds) && data.feeds.length > 0){
+  
     consolo.log("SİLO DOLULUĞU: " + data.feeds[data.length - 1].field1);
-  }
+  
 }).catch(function(err) {
   console.log('Fetch Error :-S', err);
 });
