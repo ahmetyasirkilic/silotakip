@@ -7,7 +7,7 @@
     <title>Silo Takip</title>
 </head>
 <body>
-    Deneme
+    SİLO DOLULUĞU %
 
     <script>
         fetch("https://api.thingspeak.com/channels/2001802/feeds.json?api_key=Y53XE3DGF7LRRSYO&results=2").then(function(response) {
@@ -15,7 +15,10 @@
 }).then(function(data) {
   console.log(data);
   
+  
     console.log("SİLO DOLULUK ORAI: " + data.feeds[data.feeds.length - 1].field1);
+
+    document.body.innerHTML += "12";
   
 }).catch(function(err) {
   console.log('Fetch Error :-S', err);
